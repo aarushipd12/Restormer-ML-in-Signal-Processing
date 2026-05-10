@@ -1,4 +1,4 @@
-### (Restormer-ML-in-Signal-Processing)
+0### (Restormer-ML-in-Signal-Processing)
 # Restormer-LLM: Intelligent Text Restoration
 ​A multi-stage signal processing framework leveraging Restoration Transformers and LLMs for high-fidelity text recovery from degraded imagery. This project addresses the limitations of standard CNNs and Transformers in processing high-resolution, motion-blurred text images.  
 ​## Overview
@@ -28,3 +28,11 @@ Images are normalized and padded to 8 \times 8 multiples.
 ### 2.Model Inference: 
 Load the pre-trained weights from HuggingFace (VaishV/RestormerForTextDeblurring). 
 ### 3.Execution:
+
+# Upload your blurred image
+# The pipeline will automatically:
+ 1. Deblur using Restormer
+  
+ 2. Extract text using pytesseract
+    
+ 3. Refine text using Groq LLM
